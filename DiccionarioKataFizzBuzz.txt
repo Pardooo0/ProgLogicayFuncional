@@ -1,0 +1,10 @@
+
+Diccionario:
+esPrimo:	Determina si un número es primo.
+digitos: 	Lista con nombres de los dígitos (0-9).
+dieces: 	Lista con nombres de los números (10-19).
+decenas:	Lista con nombres de las decenas (20-90).
+centenas:	Lista con nombres de las centenas (100-900).
+numeroATexto:	Convierte un número a texto en español.
+fizzBuzzOTexto:	Retorna "FizzBuzz!" si el número es primo, de lo contrario, lo convierte a texto.
+main:		Punto de entrada del programa: solicita un número, lo convierte y lo muestra en pantalla.
