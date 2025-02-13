@@ -30,6 +30,7 @@ numeroATexto n
     | n < 20 = dieces !! (n - 10)
     | n < 30 = "veinti" ++ if n == 20 then "" else numeroATexto (n `mod` 10)
     | n < 100 = let (cociente, resto) = n `divMod` 10 in decenas !! (cociente - 2) ++ if resto /= 0 then " y " ++ numeroATexto resto else ""
+    | n == 100 = "cien"
     | n < 200 = "ciento " ++ numeroATexto (n - 100)
     | n < 1000 = let (cociente, resto) = n `divMod` 100 in centenas !! (cociente - 1) ++ if resto /= 0 then " " ++ numeroATexto resto else ""
     | n < 2000 = "mil " ++ if n == 1000 then "" else numeroATexto (n `mod` 1000)
